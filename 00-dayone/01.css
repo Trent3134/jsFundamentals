@@ -1,0 +1,46 @@
+#title {color:lightgreen;
+    text-align: center;
+
+}
+
+.headings {
+    color: blue
+    border-radius: 25px;
+    background-color: gray;
+
+}
+.first, second, third {
+    border-radius: 25px;
+    background-color: gray;
+    text-align: center;
+}
+
+.descriptions {
+    color: red;
+}
+
+div {
+    border: black;
+    border-width: 25px;
+    border-style: solid;
+    background: gray;
+}
+
+.prompts {
+    display: flex;
+}
+
+.movies-table {
+    background-color: lightskyblue;
+    border: solid black 2px;
+
+}
+
+.title {
+    font-style: italic
+}
+
+.movie-wrapper {
+    display: flex;
+    justify-content: center;
+}
