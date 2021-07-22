@@ -191,4 +191,3 @@ let sent = 'this sentence will be split into individual parts';
 const str = 'the quick brown fox jumps over the lazy dog';
 const word = sent.split(' ');
 console.log(word);
-

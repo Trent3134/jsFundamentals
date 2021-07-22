@@ -73,5 +73,27 @@ let x;
 console.log('declaration:',x);
 
 x = 10;
-console.log(x);
+console.log('initialization 1:,'x);
 
+x = 33;
+console.log('initilization 2:'x);
+
+let y = 'hello';
+console.log('both',x,y);
+
+let today = 'great!';
+const efa = 'wonderful !';
+console.log(today, efa); //great! wonderful!
+
+today = 'awesome!';
+console.log(today, efa); // awesome! wonderful!
+
+efa = 'super!';
+console.log(today, efa) // resulting in error bc you cannot change a const
+
+//const example = 'initialize' //error 
+
+//example = 'testing';
+
+//console.log(example);
+'
