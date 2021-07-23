@@ -20,7 +20,21 @@ if(true){
     if(true) {
         let scope = 'indianapolis'; // local scope inside of a local scope ('city' level)
         console.log(scope, 'is the capital of indiana.');
+
+        let anotherscope = 'hello from indianapolis'
+
         console.log(`while looking outside of my very local area, i went to ${kindalocal} at night and sae ${getfromglobal}`);
     }
     console.log(scope, 'should be the closest to indianapolis')
 }
+
+console.log(anotherscope);
+
+/*
+LET VS. VAR 
+ 
+var and let seem to operate teh same way, but while do have have a lot of the same functionality (both let us declare and initialize bariables), they behave differently 
+- var is scoped to the nerest function block
+- let is scoped to the nearest enclosing block
+
+*/
