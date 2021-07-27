@@ -282,14 +282,6 @@ switch(true) {
 }
 
 
+/* LOOPS
 
-
-
-
-
-
-
-
-myname === 'trent' ? console.log(`hi, my ${myname}!`) :
-console.log(`not sure i know ${myname}`);
-(`not sure i know ${myname}`);
+*/

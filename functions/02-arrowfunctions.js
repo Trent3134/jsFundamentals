@@ -94,3 +94,9 @@ console.log(`${x}shot ${y} arrows at the target`);
 }
 
 shoot(hero, nock)
+
+function whatdoesitdo(color) {
+    if (color !== 'blue' || color !== 'green') {
+        color = 'red'; 
+    }
+};

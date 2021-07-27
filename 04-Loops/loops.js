@@ -22,7 +22,7 @@ we need to :
 
 // lets count to 10
 
-for(let i = 0; i <= 10; i++){
+for (let i = 0; i <= 10; i++) {
     console.log(i)
 }
 
@@ -56,7 +56,7 @@ no condition means that JS never knows when to stop, and will never assume that 
 
 */
 
-for(let a = 2; a > -10; a -=4){
+for (let a = 2; a > -10; a -= 4) {
     console.log(a);
 }
 
@@ -64,15 +64,15 @@ for(let a = 2; a > -10; a -=4){
 we are't limited by positve or negative numbers. we can cycle through variables asigned with strings
 */
 
-let word =  'supecalifragilisticexpialidocious'
+let word = 'supecalifragilisticexpialidocious'
 
-for(let b = 0; b < word.length; b++){
+for (let b = 0; b < word.length; b++) {
     //length is a string method, we can use in JS that helps us determine a value we may not know. 
-    console.log(b, word [b]);
+    console.log(b, word[b]);
 
     //1) we set a value of each index and are displaying that.
-     // 2) we set to display the value within the object of word. each character that is assigned to the variable of 'word' is provided an index value and this is how we are cyling through it 
-     console.log(` the letter ${word[b]} is in position: ${b}`) 
+    // 2) we set to display the value within the object of word. each character that is assigned to the variable of 'word' is provided an index value and this is how we are cyling through it 
+    console.log(` the letter ${word[b]} is in position: ${b}`)
 }
 
 /*
@@ -88,9 +88,9 @@ let city = {
     speedway: true
 }
 
-for(info in city ) {
+for (info in city) {
     console.log(info)
-    console.log(city [info]) // city. info looks for city= {info: 'value'}
+    console.log(city[info]) // city. info looks for city= {info: 'value'}
 }
 
 /*
@@ -108,20 +108,20 @@ let list = ['milk', 'eggs', 'lunch meat', 'bread', 'bananas'];
     3: 'bread'
     4: 'bananas'
     */
-for(item in list) {
+for (item in list) {
     console.log(item);
     console.log(list[item])
 }
 
 //           012345
-let myname = 'dwiGht'; 
+let myname = 'dwiGht';
 
 let propcase;
 
-for(let i = 0; i <= myname.length -1; i++){
+for (let i = 0; i <= myname.length - 1; i++) {
     // code here  
 
-    if(i === 0){
+    if (i === 0) {
         propcase = myname[i].toUpperCase(); // prop case = 'd' 
     } else {
         propcase += myname[i].toLowerCase(); // 'd'  + 'w' ='dw'
@@ -134,8 +134,8 @@ let myname = 'dwIght'
 
 let propcase;
 
-for(index in myname){
-    index == 0 ? propcase = myname[index].toUpperCase(): propcase +=myname[index].toLowerCase()
+for (index in myname) {
+    index == 0 ? propcase = myname[index].toUpperCase() : propcase += myname[index].toLowerCase()
 }
 console.log(propcase);
 
@@ -156,7 +156,7 @@ console.log(propcase);
 
 let indexarray = ['spot 1', 2, true, 'not fifth']
 
-for(let pos of indexarray){
+for (let pos of indexarray) {
     console.log(pos, 'was run through a "for of" loop');
 
 }
@@ -171,11 +171,84 @@ for(variable of iterables) {
 
 let officecharacters = ['dwight', 'michael', 'jim', 'stanley', 'pam'];
 
-for(worker of officecharacters){
-    if(worker === 'dwight' || worker === 'michael'){
+for (worker of officecharacters) {
+    if (worker === 'dwight' || worker === 'michael') {
         console.log(worker, 'works too much in the office.');
     }
-    if(worker === 'jim' && worker !== 'dwight') {
+    if (worker === 'jim' && worker !== 'dwight') {
         console.log('bear, beets, battlestar galactica');
     }
 }
+
+// wrtie a for loop that counts from 1 to 100 
+/*
+for numbers that are evenly divisible by 3, print: 'fizz'
+for numbers that are evenly divisible by 5 print: 'buzz'
+for numbers that are evenly divisible by 5 and 3 print: 'fizz buzz'
+
+*/
+
+for (let i = 0; i <= 100; i++) {
+    console.log(i)
+    if (i % 3 == 0) {
+        console.log('fizz')
+    }
+    if (i % 5 == 0) {
+        console.log('buzz')
+    }
+}
+
+// jeromes way 
+
+for (let l = 0; l <= 100; l++) {
+    if (l % 15 == 0) {
+        console.log('fizz buzz');
+    } else if (l % 3 == 0) {
+        console.log('fizz');
+    } else if (l % 5 == 0) {
+        console.log('buzz');
+    } else {
+        console.log(l);
+    }
+
+}
+
+for (let i = 0; i <= 100; i++) {
+    if (i % 6 == 0 && i % 8 == 0) {
+        console.log('Fizz Buzz')
+    }
+    else if (i % 6 == 0) {
+        console.log('Fizz')
+    }
+    else if (i % 8 == 0) {
+        console.log('Buzz')
+    }
+} else {
+    console.log(i);
+}
+}
+
+
+
+
+let library = {
+    name: 'string i guess',
+    address: 'strings in there',
+    sections: {
+        collections: [
+            {
+                classification: 'one',
+                count: 2
+            aisle: 'value for it'
+            },
+            {,
+             }
+                classification: 'two',
+    count: 3,
+    aisle: 'value for it'
+{
+		]
+	}
+}
+console.log(library)
+console.log(library.sections.collections)

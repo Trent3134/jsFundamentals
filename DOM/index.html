@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>intro to dom manipulation</title>
+</head>
+<body>
+    <!-- dom stands for document object model, and is what allows our js to interact with the HTML and CSS of our page. 
+        the dom specifies how browsers should creat a model of an html page and how js can access and update the contents of a we page whole it is in the browsers window
+    
+    ---dom is an object representation of a web page, which can be modified with a scripiting language like java
+
+two primary functions: 
+1. making a model of an html page 
+-when the browser loads a webpage, it creates a model of the page in memory
+
+- the dom specifies the way in which the browser should structure teh model in what is called the dom tree. the dom is called an object model because the dom tree is made of objects
+
+2. accessing and changing the HTML page
+
+-the dom also prives methods and properties to access and update each object in the model, which in turn updates what theuser sees in the broweser.
+
+usually when working with dom tree, we will access an element we want to work with, and then we will modify, or manipulate it.
+
+accesing: 
+COMMON METHODS FOR ACCESSING A SINGLE ELEMENT
+    -getElementById()
+    -queryselector()
+
+COMMON METHODS FOR ACCESSING MULTIPLE ELEMENTS
+    -- QuerySelectorALL()
+    -getelementsbyclassname()
+    -getelementsbytagname()
+
+MANIPULATING
+    common methods for working with html content
+    -Innerhtml 
+    - textContent
+    - createElement
+
+COMMON METHODS FOR WORKING WITH TAG ATTRIBUTES: 
+- className / id
+- setATTRIBUTE()
+    -getATTRIBUTE()
+-->
+
+<!-- ! 1 
+or <p#='testparagraph '>sample test</p>    
+-->
+<p id='testparagraph'>sample test</p>
+
+<!-- ! 2
+p.sampleclass*4: emmet abv
+-->
+<p class="sampleClass">a class paragraph</p>
+<p class="sampleClass">a class paragraph</p>
+<p class="sampleClass">a class paragraph</p>
+<p class="sampleClass">a class paragraph</p>
+<h2 class='sampleClass'>an h2 example</h2></h2>
+<hr />
+
+<span id='spanTest'>hello<span style='display: none'>world</span>
+<br />
+<hr />
+
+<!-- !!! 3  -->
+<button id="clickThis">Click!</button>
+<br />
+<hr />
+
+
+<!-- !!!! 4  -->
+<label for='nameInput'>enter your name here</label> <br />
+<input type='text' id='nameInput' placeholder="your name here" >/
+
+
+  <!-- we can write java directly in our html page by typing it withing a <script> tag, similar to how we would write css in a <style> tag -->
+      <!-- <script> -->
+          <!-- // now we can write some java  -->
+          <!-- console.log('hello from the script tag~!'); -->
+      <!-- </script> -->
+      <!-- waht if we want to use an external java file in this webpage ?
+      -->
+
+    <script src='script.js'></script>
+</body>
+</html>
