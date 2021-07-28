@@ -51,12 +51,12 @@ console.log(document.getElementById('spanTest').innerHtml);
 
 // !!! addEventListener ()
 
-document.getElementById('clickThis').addEventListener('click',function(event) {
-   //no i can write code 
-  // console.log(event.);
-   console.log(event.target);
-   event.target.style.backgroundColor = '#031bf3'
-})
+// document.getElementById('clickThis').addEventListener('click',function(event) {
+//    //no i can write code 
+//   // console.log(event.);
+//    console.log(event.target);
+//    event.target.style.backgroundColor = '#031bf3'
+// })
 
 // ! addEventListener - keyup
 
@@ -74,3 +74,22 @@ input.addEventListener('keyup', e => {
         document.getElementsByTagName('p')[1]. innerText = `Everyone, say hello to ${e.target.value}`
     }
 })
+
+
+// challenge 
+// move the button into a variable and when yhou click on it will turn blue, if it is alreadu blue it will turn red. 
+// 1. move the button into a variable 
+//2. click it, and it will turn blue
+//3. if it is ByteLengthQueuingStrategy, turn red 
+
+let button = document.getElementById('clickThis');
+
+button.addEventListener('click', ev => {
+    console.log(ev.target.style.backgroundColor);
+    if(ev.target.style.backgroundColor == 'blue'){
+    ev.target.style.backgroundColor = 'red';
+      } else {
+          ev.target.style.backgroundColor = 'blue';
+      }
+})
+
